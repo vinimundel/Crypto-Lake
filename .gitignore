@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Data (Não queremos subir dados pesados para o Git)
+data/
+
+# IDE
+.vscode/
+.idea/
