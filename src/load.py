@@ -10,7 +10,7 @@ def upload_to_s3(file_path: str, s3_folder: str = "processed"):
     """
     Faz o upload de um arquivo local para o Bucket S3 configurado.
     """
-    # Recupera variáveis de ambiente (carregadas pelo config.py ou Docker)
+    # Recupera variáveis de ambiente
     bucket_name = os.getenv("S3_BUCKET_NAME")
     aws_access_key = os.getenv("AWS_ACCESS_KEY_ID")
     aws_secret_key = os.getenv("AWS_SECRET_ACCESS_KEY")
@@ -19,7 +19,7 @@ def upload_to_s3(file_path: str, s3_folder: str = "processed"):
     if not bucket_name:
         raise ValueError("Bucket Name não encontrado nas variáveis de ambiente.")
 
-    # Nome do arquivo no S3 (mantém o nome original)
+    # Nome do arquivo no S3
     filename = os.path.basename(file_path)
     s3_key = f"{s3_folder}/{filename}"
 
