@@ -1,5 +1,5 @@
 requests==2.31.0       # Para fazer chamadas à API (HTTP Client)
-pandas==2.2.0          # Para manipulação tabular (DataFrame)
+pandas==2.2.0          # Para manipulação tabular 
 python-dotenv==1.0.0   # Para ler variáveis do arquivo .env
-boto3==1.34.0          # SDK da AWS (usaremos na Etapa 4, mas já instalamos agora)
-pyarrow==15.0.0        # Engine para criar arquivos Parquet (mais eficiente que CSV)
+boto3==1.34.0          # SDK da AWS
+pyarrow==15.0.0        # Engine para criar arquivos Parquet
