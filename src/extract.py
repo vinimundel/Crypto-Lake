@@ -3,7 +3,7 @@ import logging
 from typing import List, Dict, Any
 from src.config import BASE_URL, VS_CURRENCY, COIN_IDS, TIMEOUT_SECONDS
 
-# Configuração básica de logs (essencial para debugar em produção/Docker)
+# Configuração básica de logs 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def fetch_crypto_data() -> List[Dict[str, Any]]:
